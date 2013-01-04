@@ -1,0 +1,21 @@
+{
+    "name": "Drumon/Router",
+    "description": "Router",
+
+    "repositories": [
+        {
+					"type": "vcs",
+					"url": "https://github.com/Drumon/Request.git"
+        }
+    ],
+
+		"require": {
+			"Drumon/Request": "dev-master"
+		},
+
+		"autoload": {
+			"psr-0": {
+				"Drumon\\Router": "src/"
+			}
+		}
+}
