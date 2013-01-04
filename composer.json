@@ -3,17 +3,10 @@
     "description": "Router",
 
     "require": {
-        "Drumon/Request": "dev-master"
+        "drumon/request": "dev-master"
     },
 
     "autoload": {
         "psr-0": { "Drumon\\Router": "src/" }
-    },
-
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git://github.com/Drumon/Request.git"
-        }
-    ]
+    }
 }
