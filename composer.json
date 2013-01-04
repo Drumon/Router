@@ -15,7 +15,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/Drumon/Request.git"
+            "url": "git://github.com/Drumon/Request.git"
         }
     ]
 }
