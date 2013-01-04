@@ -140,22 +140,5 @@ class Router
     {
         return $this->current_route_data;
     }
-
-    public static function getNamedRoute($name, $routes)
-    {
-        $names = explode('/', $name);
-
-        if (isset($names[1])) {
-            $routes = include $routes['MODULE']['/'.$names[0]];
-            $name = $names[1];
-        } else {
-            $name = $names[0];
-        }
-
-        if (isset($routes['NAME'][$name])) {
-            return $routes['NAME'][$name];
-        }
-
-        return null;
-    }
+    
 }
