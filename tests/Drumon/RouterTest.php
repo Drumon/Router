@@ -209,9 +209,9 @@ class RouterTest extends PHPUnit_Framework_TestCase
                      ->method('includeModuleRoutes')
                      ->will($this->returnValue($module_routes));
 
-        $route_data = $router->match($routes);
+        $router->match($routes);
 
-        $this->assertEquals('module', $route_data);
+        $this->assertEquals('module', $router->getData());
     }
 
     public function testMatchModuleTwoModules()
@@ -236,8 +236,8 @@ class RouterTest extends PHPUnit_Framework_TestCase
                ->with($this->equalTo('module_other_routers.php'))
                ->will($this->returnValue($module_routes));
 
-        $route_data = $router->match($routes);
+        $router->match($routes);
 
-        $this->assertEquals('module', $route_data);
+        $this->assertEquals('module', $router->getData());
     }
 }
