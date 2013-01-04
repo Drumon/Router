@@ -2,20 +2,20 @@
     "name": "Drumon/Router",
     "description": "Router",
 
+    "require": {
+        "Drumon/Request": "dev-master"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "Drumon\\Router": "src/"
+        }
+    },
+
     "repositories": [
         {
-					"type": "vcs",
-					"url": "https://github.com/Drumon/Request.git"
+            "type": "vcs",
+            "url": "https://github.com/Drumon/Request.git"
         }
-    ],
-
-		"require": {
-			"Drumon/Request": "dev-master"
-		},
-
-		"autoload": {
-			"psr-0": {
-				"Drumon\\Router": "src/"
-			}
-		}
+    ]
 }
